@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>燕子坞</title>
+  
+  <subtitle>将军下马 丞相落轿</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-12-17T07:11:03.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>thankutantan</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于poromise及其使用</title>
+    <link href="http://yoursite.com/2018/09/18/%E5%85%B3%E4%BA%8Eporomise%E5%8F%8A%E5%85%B6%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/09/18/关于poromise及其使用/</id>
+    <published>2018-09-18T07:50:25.000Z</published>
+    <updated>2018-12-17T07:11:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>promise如何处理for循环以及调用依赖。<br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;promise如何处理for循环以及调用依赖。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo-Next个性主题修改教程</title>
+    <link href="http://yoursite.com/2018/09/09/Hexo-Next%E4%B8%AA%E6%80%A7%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9%E6%95%99%E7%A8%8B/"/>
+    <id>http://yoursite.com/2018/09/09/Hexo-Next个性主题修改教程/</id>
+    <published>2018-09-09T08:18:11.000Z</published>
+    <updated>2018-12-17T07:11:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这篇文章主要详细讲述一下是如何修改我的Hexo-Next的。<br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这篇文章主要详细讲述一下是如何修改我的Hexo-Next的。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo教程" scheme="http://yoursite.com/categories/Hexo%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="教程" scheme="http://yoursite.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+</feed>
