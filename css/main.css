@@ -1824,7 +1824,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6617;
+  background: #c37dff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2924,7 +2924,7 @@ hr {
 .tag-cloud a {
   display: inline-block;
   margin: 10px;
-  color: #f1c40f !important;
+  color: #0f0 !important;
 }
 .sidebar {
   background: url("/images/sidebar_2.png");

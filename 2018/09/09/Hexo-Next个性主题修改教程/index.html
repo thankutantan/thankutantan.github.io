@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,教程," />
+  <meta name="keywords" content="Hexo-Next,教程," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="这篇文章主要详细讲述一下是如何修改我的Hexo-Next的。">
-<meta name="keywords" content="Hexo,教程">
+<meta name="description" content="此文章用来记录博主的建站历程，以便备用，或者供人参考。">
+<meta name="keywords" content="Hexo-Next,教程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo-Next个性主题修改教程">
+<meta property="og:title" content="Hexo-Next+GitHub搭建个人博客&amp;个性化配置">
 <meta property="og:url" content="http://yoursite.com/2018/09/09/Hexo-Next个性主题修改教程/index.html">
 <meta property="og:site_name" content="燕子坞">
-<meta property="og:description" content="这篇文章主要详细讲述一下是如何修改我的Hexo-Next的。">
+<meta property="og:description" content="此文章用来记录博主的建站历程，以便备用，或者供人参考。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-17T07:11:03.000Z">
+<meta property="og:updated_time" content="2018-12-26T06:54:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo-Next个性主题修改教程">
-<meta name="twitter:description" content="这篇文章主要详细讲述一下是如何修改我的Hexo-Next的。">
+<meta name="twitter:title" content="Hexo-Next+GitHub搭建个人博客&amp;个性化配置">
+<meta name="twitter:description" content="此文章用来记录博主的建站历程，以便备用，或者供人参考。">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>Hexo-Next个性主题修改教程 | 燕子坞</title>
+  <title>Hexo-Next+GitHub搭建个人博客&个性化配置 | 燕子坞</title>
   
 
 
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo-Next个性主题修改教程</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo-Next+GitHub搭建个人博客&个性化配置</h1>
         
 
         <div class="post-meta">
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo教程/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo教程</span>
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
                   </a>
                 </span>
 
@@ -345,6 +345,10 @@
           
 
           
+              <div class="post-description">
+                  此文章用来记录博主的建站历程，以便备用，或者供人参考。
+              </div>
+          
 
         </div>
       </header>
@@ -359,7 +363,30 @@
       
 
       
-        <p>这篇文章主要详细讲述一下是如何修改我的Hexo-Next的。<br><a id="more"></a></p>
+        <a id="more"></a>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>此篇文章主要针对Hexo-Next主题下的Mist风格，如果有出入，请酌情参考。<br><strong> 文章最后会总结一下修改心得，授人以鱼不如授人以渔！ </strong></p>
+<h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><blockquote>
+<p>如果你想深入了解或者想要更多细节的话请观看官方文档<br>  以下可能需要VPN才能访问<br>  <a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">hexo</a><br>  <a href="https://theme-next.iissnan.com/" target="_blank" rel="noopener">hexo-next</a></p>
+</blockquote>
+<p>首先，我们明确一下建立博客需要的要素：</p>
+<ul>
+<li>一个成熟的博客模版（最好能提供各种风格，并且让程序员修改风格时候方便明了，不需要了解整个前端架构）</li>
+<li>一个服务器，能够让我们将博客部署上去以便供人访问</li>
+</ul>
+<p>那么有没有什么方法能够解决以上这两个问题呢？<br>于是乎，Hexo+GitHub这个方法出现了！也就是你现在看到的博客采用的方法。</p>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>首先，你需要安装</p>
+<blockquote>
+<p><a href="http://nodejs.cn/" target="_blank" rel="noopener">node.js</a><br><a href="https://git-scm.com/downloads" target="_blank" rel="noopener">git</a></p>
+</blockquote>
+<p>其中node.js是hexo运行需要的环境，git是你部署博客时的需要。<br>接下来我们准备安装hexo。<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// node.js安装hexo模块 -g代表-global全局安装</span><br><span class="line"><span class="meta">$</span> npm install hexo-cli -g</span><br><span class="line">// hexo init [文件夹名]</span><br><span class="line"><span class="meta">$</span> hexo init blog</span><br><span class="line"></span><br><span class="line"><span class="meta">$</span> cd blog</span><br><span class="line"></span><br><span class="line">// 安装npm的模块</span><br><span class="line"><span class="meta">$</span> npm install</span><br><span class="line"></span><br><span class="line">// 本地启动hexo</span><br><span class="line"><span class="meta">$</span> hexo server</span><br></pre></td></tr></table></figure></p>
+<p>打开浏览器输入localhost:4000查看<br>如果你有看到Hexo几个大字说明安装Hexo成功</p>
+<p>如果你不喜欢Hexo原生主题的话，就可以继续下载不同的主题，这里推荐<font color="#4b5cc4">Next</font><br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> cd [your-hexo-site]</span><br><span class="line"><span class="meta">$</span> git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></p>
+<p>再打开<font color="#33CC33">[your-hexo-site]/_config.yml</font>（Hexo配置文件）<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br></pre></td></tr></table></figure></p>
+<p>这步目的就是将主题改为next<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean  //清除缓存</span><br><span class="line"><span class="meta">$</span> hexo generate  //重新生成代码</span><br><span class="line"><span class="meta">$</span>hexo server  //部署到本地</span><br><span class="line"></span><br><span class="line">//然后打开浏览器访问 localhost:4000 查看效果</span><br></pre></td></tr></table></figure></p>
+<h1 id="主题修改"><a href="#主题修改" class="headerlink" title="主题修改"></a>主题修改</h1><p>这里主要介绍一下一些不常见的修改，基础部分请参照官方文档。</p>
+<h2 id="设定自定义首页"><a href="#设定自定义首页" class="headerlink" title="设定自定义首页"></a>设定自定义首页</h2><p>这里的首页指登录你域名后展示的页面，正常情况下就是你的博客主页。<br>但是如果你想用自定义的页面作为首页，再通过首页进入博客呢？<br>这里继续打开Hexo配置文件<font color="#33CC33">[your-hexo-site]/_config.yml</font><br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Home page setting</span></span><br><span class="line"><span class="comment"># path: Root path for your blogs index page. (default = '')</span></span><br><span class="line"><span class="comment"># per_page: Posts displayed per page. (0 = disable pagination)</span></span><br><span class="line"><span class="comment"># order_by: Posts order. (Order by date descending by default)</span></span><br><span class="line"><span class="attr">index_generator:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">'/blog/'</span></span><br><span class="line"><span class="attr">  per_page:</span> <span class="number">10</span></span><br><span class="line"><span class="attr">  order_by:</span> <span class="bullet">-date</span></span><br></pre></td></tr></table></figure></p>
+<p>大家看一下英文注释应该就可以了解到这边是运行<font color="#4b5cc4">hexo-g</font>时生成首页的配置。<br>这里着重介绍一下我们要改的path。</p>
+<font color="#4b5cc4">path</font>：即生成首页路径，默认首页在<font color="#33CC33">[your-hexo-site]/public/index.html</font>中。将其改成’blog’后，就会生成在<font color="#33CC33">[your-hexo-site]/public/blog/index.html</font>
 
       
     </div>
@@ -377,7 +404,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/Hexo-Next/" rel="tag"># Hexo-Next</a>
           
             <a href="/tags/教程/" rel="tag"># 教程</a>
           
@@ -457,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -551,6 +587,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开始"><span class="nav-number">2.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#前期准备"><span class="nav-number">2.1.</span> <span class="nav-text">前期准备</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题修改"><span class="nav-number">3.</span> <span class="nav-text">主题修改</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设定自定义首页"><span class="nav-number">3.1.</span> <span class="nav-text">设定自定义首页</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
